@@ -7,7 +7,7 @@
 
 int main()
 {
-	double x, y;
+	double y;
 	std::string line = "";
 	std::string line2 = "";
 	double sum;
