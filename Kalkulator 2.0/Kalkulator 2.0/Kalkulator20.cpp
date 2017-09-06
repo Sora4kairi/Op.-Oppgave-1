@@ -3,26 +3,34 @@
 
 #include "stdafx.h"
 #include <iostream>
-#include <string>
-using namespace std;
 
 int main()
 {
-
-	std::string in = "";
-	std::cout << "Skriv inn et uttrykk" << std::endl;
-	std::cin >> in;
-	std::cout << in << std::endl;
-	int sum = 0;
-	int numbers[10] = { 0,1,2,3,4,5,6,7,8,9 };
-	std::cout << in.length() << endl;
-	int length = in.length();
-	for (int i = 0; i < length; i++)
+	float num1, num2; //Variabler, float for å regne med desimaltall
+	char operation; //bruker for å lagre operator
+	char op[] = { "+" "-" "*" "/" };
+	std::cout << "Skriv inn to tall med en operator (+ - * /) imellom>" << std::endl;
+	std::cin >> num1 >> operation >> num2; //Bruker iostream til å ta inn en float, deretter en operatør, og til slutt en float til.
+	if (operation == op[0])
 	{
-			sum = sum + in[0];
-			in.erase(0);
+		std::cout << num1 + num2 << std::endl;
 	}
-	std::cout << sum << std::endl;
-    return 0;
+	else if (operation == op[1])
+	{
+		std::cout << num1 - num2 << std::endl;
+	}
+	else if (operation == op[2])
+	{
+		std::cout << num1*num2 << std::endl;
+	}
+	else if (operation == op[3])
+	{
+		std::cout << num1 / num2 << std::endl;
+	}
+	else
+	{
+		std::cout << "Det var en feil i inputtet. Vennligst kontroller og skriv inn på rett måte neste gang." << std::endl; //I tilfelle brukeren skriver inn noe annet enn godkjente operatorer
+	}
+	return 0;
 }
 
