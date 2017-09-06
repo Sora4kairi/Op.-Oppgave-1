@@ -42,7 +42,7 @@ int main()
 		};
 		std::cout << "Den totale summen er: " << sum << std::endl;
 		std::cout << "Vil du fortsette? Skriv \"y\" hvis du vil fortsette eller \"n\" hvis du er ferdig:" << std::endl;
-		std::cout << "Hvis du vil slette summen din, skriv \"s\". Dette vil slette summen din og starte programmet på nytt." << std::endl;
+		std::cout << "Hvis du vil slette summen din, skriv \"s\". Dette vil slette summen din og starte programmet pÃ¥ nytt." << std::endl;
 		std::cin >> line2;
 		if (line2 == "n")
 		{
@@ -55,7 +55,7 @@ int main()
 		}
 		else
 		{
-			std::cout << "Programmet vil nå fortsette" << std::endl;
+			std::cout << "Programmet vil nÃ¥ fortsette" << std::endl;
 		}
 
 	}
